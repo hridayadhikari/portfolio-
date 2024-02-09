@@ -156,7 +156,6 @@ main hr {
     background-image: url('git.png');
 }
 
-/* Media Queries for responsiveness */
 @media screen and (max-width: 768px) {
     .first {
         flex-direction: column;
