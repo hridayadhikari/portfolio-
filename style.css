@@ -203,17 +203,19 @@ flex-direction: column-reverse;
     margin-top: 20px; 
 }
     .about-image {
-    max-width:70%; 
+    max: width 9px;0%; 
     order: 1; 
 }
 
 .about-content h2 {
+    padding-left: 50px;
     font-size: 36px;
     justify-content: center;
     text-align: center;
 }
 
 .about-content p {
+    padding-left: 50px;
     font-size: 16px;
     justify-self: unset;
     justify-content: center;
