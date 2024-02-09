@@ -18,45 +18,37 @@
 
 <body>
     <header>
-        <nav>
-            <div class="left">Hriday's Portfolio</div>
-            <div class="menu-toggle" onclick="toggleMenu()">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="/">Projects</a></li>
-                <li><a href="/">Contact Me</a></li>
-            </ul>
-        </nav>
+       
         
-        <!-- <nav>
+        <nav>
             <div class="left">Hriday's Portfolio</div>
             <div class="righ">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="/">Projects</a></li>
-                    <li><a href="/">Contact Me</a></li>
+                    <li><a href="/">Contact</a></li>
                 </ul>
             </div>
-        </nav> -->
+        </nav>
     </header>
 
 
     <main>
         <section id="home" class="first">
+            
             <div class="leftscetion">Hi👋 <br>My name is<span class="por"> Hriday </span>
                 <div> I'm a passionate </div>
                 <span id="element"></span>
+                <div class="buttons">
+                    <a href="RESUME HRIDAY ADHIKARI.pdf" class="btn" download>Download Resume</a>
+                </div>
             </div>
             <div class="rightscetion">
 
 
                 <img src="bg.png" alt="png" height="600px">
+                
           
         </section>
         <hr>
@@ -89,29 +81,14 @@
 
 
         <script>
-           document.addEventListener('DOMContentLoaded', function() {
-    var menuToggle = document.querySelector('.menu-toggle');
-    var menu = document.querySelector('.menu');
+            var typed = new Typed('#element', {
+                strings: ['Web Developor', 'Photographer'],
+                typeSpeed: 50,
+            });
 
-    menuToggle.addEventListener('click', function() {
-        menu.classList.toggle('active'); // Toggle the 'active' class on the menu
-    });
-
-    // Close the menu when clicked anywhere else on the page
-    document.addEventListener('click', function(event) {
-        var isClickInsideMenu = menu.contains(event.target); // Check if the click is inside the menu
-        var isClickOnMenuToggle = menuToggle.contains(event.target); // Check if the click is on the menu toggle button
-        if (!isClickInsideMenu && !isClickOnMenuToggle) {
-            menu.classList.remove('active'); // Close the menu if the click is outside the menu and menu toggle button
-        }
-    });
-});
+            
 
         </script>
-        <script> function toggleMenu() {
-            var menu = document.querySelector('.menu');
-            menu.classList.toggle('active'); // Toggle the 'active' class on the menu
-        }</script>
 </body>
 </body>
 

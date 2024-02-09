@@ -40,7 +40,16 @@ nav ul li a:hover {
 .left {
     font-size: 1.7rem;
 }
-
+.leftscetion .btn{
+padding: 10px;
+    background:rgb(13, 45, 100) ;
+    color:white;
+    border: 2px solid white;
+    border-radius: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration:none
+}
 .first {
     display: flex;
     justify-content: space-around;
@@ -171,14 +180,51 @@ main hr {
         width: 100%;
         margin: 20px 0;
     }
+    
 }
 
-@media screen and (max-width: 480px) {
-    .about-content h2 {
-        font-size: 36px;
+@media screen and (max-width: 1000px) {
+    nav{
+        flex-direction: column;
+        justify-content: center;
     }
 
-    .about-content p {
-        font-size: 16px;
-    }
+.first{
+flex-wrap: wrap;
+flex-direction: column-reverse;
+}
+.about-section {
+    flex-direction: column;
+    text-align: center;
+}
+
+.about-content {
+    order: 2; 
+    margin-top: 20px; 
+}
+    .about-image {
+    max-width:600px; 
+    order: 1; 
+}
+
+.about-content h2 {
+    font-size: 36px;
+}
+
+.about-content p {
+    font-size: 16px;
+    justify-self: unset;
+    justify-content: center;
+}
+.social-media{
+
+    text-align: center;
+}
+   .left{
+padding-bottom: 2%;
+
+   }
+.leftscetion{
+    justify-content: left;
+}
 }
